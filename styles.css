@@ -1,0 +1,125 @@
+:root {
+  /*COLOR*/
+  --color-blue: #0065ff;
+  --color-white: #f8f9fa;
+  --color-black: #202020;
+  --color-background: var(--color-white);
+  --color-foreground: var(--color-black);
+  /*--color-link--visited:;*/
+
+  /*TYPOGRAPHY*/
+  --font-family-default: Be Vietnam;
+  --font-family-h2: EB Garamond;
+  --font-size-default: 1rem;
+  --font-size-h: 1rem;
+  --font-size-h2: 2.5rem;
+
+  /*WHITESPACE*/
+  --whitespace-m: 1.25rem;
+  --whitespace-l: 2.5rem;
+  --whitespace-xl: 4rem;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-default);
+}
+
+main {
+  margin: auto;
+  max-width: 960px;
+  padding: 0 20px;
+}
+
+.container {
+  display: grid;
+  row-gap: var(--whitespace-m);
+}
+
+h1,
+.h1 {
+  color: var(--color-black);
+  font-size: var(--font-size-h);
+  padding-left: 20%;
+}
+
+h2,
+.h2 {
+  color: var(--color-blue);
+  font-family: var(--font-size-h2);
+  font-size: var(--font-size-h2);
+  padding-top: var(--whitespace-xl);
+}
+
+h3,
+h3 {
+  color: var(--color-blue);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-blue);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 4.5rem;
+  background-color: var(--color-background);
+  box-shadow: 0px 24px 64px rgba(0, 0, 0, 0.15);
+}
+
+.divider {
+  border-top: 1px solid var(--color-blue);
+  margin-block: var(--whitespace-xl);
+}
+
+.divider-s {
+  width: 8rem;
+}
+
+.callout {
+  margin-top: var(--whitespace-m);
+  padding: 0.75rem;
+}
+.callout p:before {
+  content: "";
+  background-image: url("vector.svg");
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin: 6px 15px 0 0;
+}
+
+.container2 {
+  display: grid;
+  gap: var(--whitespace-m);
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.button {
+  color: var(--color-blue);
+  background-color: white;
+  border: 1px solid var(--color-blue);
+  border-radius: 25px;
+  margin-top: var(--whitespace-l);
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.padding {
+  padding: 0 1rem 0 1rem;
+}
